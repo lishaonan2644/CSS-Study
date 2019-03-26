@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="textJustify">
+		<p>
+			<h3>(1)text-align: justify会保证文字段落两边都是对齐的 || text-indent: 50px;表示文本第一行缩进 || letter-spacing:2px; 增加字符间距 || line-height: 25px;可以修改行间距 || font:italic bold 20px/30px Georgia,serif; 设置字体样式 || margin:auto; 可以让文本居中</h3>
+			<p class="main">阿法拉三sfdg季sdfg度福利gsdfgssdfgdf就爱上了的房间辣看时间东方丽景阿斯fsad顿发了fasd埃里克的解放sfasdsdfggsdfdfg垃圾快sdssdfdfgfgsdf速的福gsdf利就gsdf爱上了的咖啡sdfgsdfgdffegsdfgasasdfasdfedf机g埃asdf里克sasdfasfasdfddfgs森的积dfg分sdfgdsdfgfs垃sdfg圾水电费gsd拉克丝京东gsfsdfgdf方肯定颈复康gsd颗sdfgfg粒打开覅sdfsgdfg恩看看地方杰尔夫阿萨德覅就dfg饿了就爱上对方</p>
+			<b>注意：</b>重置窗口大小看看看看是如何工作的！</p>
+		</p>
+
+		<p>
+			<h3>(2)dext-decoration 去掉下面链接下划线 || text-shadow: 2px 2px #FF0000;设置文字阴影</h3>
+			Link to:<a class="textaCls" href="http://www.baidu.com"> baiduXXXXXXXXXXXXXXXXXXXXX </a>
+			<h5>text-decoration 还有三种属性 overline; line-through; underline;分别是上划线，中划线，下划线</h5>
+		</p>
+
+		<div>
+			<h3>(3)text-transform:大写(uppercase)，小写(lowercase)，首字母大写(capitalize)</h3>
+			<p class="uppercaseCls">This is All uppercase</p>
+			<p class="lowercaseCls">This is All lowercase</p>
+			<p class="capitalizeCls">This is All capitalize</p>
+		</div>
+
+		<div class="linkCls">
+			<h4>
+			    下面是链接不同想状态下设定颜色的写法。</p>
+				a:link{collor:#FFFFFF;}
+				a:visited{collor:#00FF00;}
+				a:hover{collor:#FF00FF;}
+				a:active{collor:#0000FF;}
+			</h4>
+			<a href="/css/" target="_blank">这就是一个链接</a>
+		</div>
+
+		<div>
+			<ul>
+				<li><a href="http://www.baidu.com">列表1</a></li>
+				<li><a href="http://www.baidu.com">列表2</a></li>
+				<li><a href="http://www.baidu.com">列表3</a></li>
+				<li><a href="http://www.baidu.com">列表4</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<style type="text/css">
+	/*会保证文字段落两边都是对齐的*/
+	.main{
+		text-align: justify;
+		text-indent: 50px;
+		letter-spacing:2px;
+		line-height: 25px;
+		font:italic bold 20px/30px Georgia,serif;
+		width: 70%;
+		margin:auto;
+		background-color: #b0e0e6;
+		padding:10px;
+	}
+	/*去掉链接下划线*/
+	.textaCls{
+		text-decoration: none;
+		text-shadow: 2px 2px #FF0000;
+	/*	position:absolute;*/
+		left:0px;
+		line-height: 30px;
+		margin-bottom: 50px;
+	}
+	/*大写，小写，首字母大写*/
+	.uppercaseCls{
+		text-transform: uppercase;
+	}
+	.lowercaseCls{
+		text-transform: lowercase;
+	}
+	.capitalizeCls{
+		text-transform: capitalize;
+	}
+	a:link,a:visited{
+		display: block;
+		font-weight:bold;
+		color:#FFFFFF;
+		background-color: #98bf21;
+		width:120px;
+		text-align: center;
+		padding: 4px;
+		text-decoration: none;
+		border-radius: 20px;
+	}
+	ul{
+		width:100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		position: relative;
+		right: 20px;
+		top:0px;
+	/*	z-index: -1;*/
+	}
+	li{
+		list-style-type: none;
+		font-size: 20px;
+		padding: 0 10px;
+	}
+</html>
